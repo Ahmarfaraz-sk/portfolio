@@ -1,0 +1,113 @@
+/* styles.css */
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+header .subtitle {
+    margin: 10px 0;
+    font-size: 1.3em;
+}
+
+header .contact-info {
+    margin-top: 20px;
+}
+
+header .contact-info p {
+    margin: 5px 0;
+}
+
+header a {
+    color: #fff3c1;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 20px 0;
+}
+
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    border-bottom: 3px solid #ff7e5f;
+    padding-bottom: 10px;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff7e5f;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+    font-size: 1.2em;
+}
+
+ul li:before {
+    content: "•";
+    color: #ff7e5f;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5em;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1.2em;
+}
+
+@media (min-width: 600px) {
+    .container {
+        padding: 40px;
+    }
+
+    section {
+        margin: 40px 0;
+    }
+}
